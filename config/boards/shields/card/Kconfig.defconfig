@@ -1,3 +1,9 @@
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
 if SHIELD_CARD_LEFT
 
     config ZMK_KEYBOARD_NAME
