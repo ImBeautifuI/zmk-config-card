@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: repeatrollfix-tapdance-macro-mouse-dongle
+      revision: main
       import: app/west.yml
   self:
     path: config
