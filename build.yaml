@@ -17,5 +17,3 @@ include:
     shield: card_left
   - board: nice_nano_v2
     shield: card_right
-  #- board: nice_nano_v2
-  #  shield: settings_reset
