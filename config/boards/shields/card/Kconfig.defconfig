@@ -1,3 +1,5 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
 config ZMK_BLE
 	default y
@@ -5,22 +7,30 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
-if SHIELD_CARD_LEFT
+CONFIG_BT_GATT_ENFORCE_SUBSCRIPTION=n
 
-    config ZMK_KEYBOARD_NAME
-        default "card"
+if SHIELD_CARD_LEFT || SHIELD_CARD_RIGHT
 
-    config ZMK_SPLIT
-	default y
+config ZMK_KEYBOARD_NAME
+	default "The Card"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
+endif
+
+
+if SHIELD_CARD_RIGHT
+
+config ZMK_SPLIT
 	default y
 
 endif
 
-if SHIELD_CARD_LEFT || SHIELD_CARD_RIGHT
 
-    config ZMK_SPLIT
-        default y
+if SHIELD_PIANO_NORM_LEFT
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
 
 endif
