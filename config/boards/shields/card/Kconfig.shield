@@ -3,3 +3,6 @@ config SHIELD_CARD_LEFT
 
 config SHIELD_CARD_RIGHT
     def_bool $(shields_list_contains, card_right)
+
+config SHIELD_PUNI
+	def_bool $(shields_list_contains,puni)
