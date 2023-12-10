@@ -16,6 +16,12 @@ config ZMK_KEYBOARD_NAME
 
 endif
 
+if SHIELD_PUNI
+
+config ZMK_KEYBOARD_NAME
+	default "Puni"
+
+endif
 
 if SHIELD_CARD_RIGHT
 
