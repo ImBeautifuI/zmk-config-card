@@ -18,4 +18,4 @@ include:
   - board: nice_nano_v2
     shield: card_right
   - board: nice_nano_v2
-      shield: puni
+    shield: puni
